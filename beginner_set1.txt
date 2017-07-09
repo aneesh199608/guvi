@@ -1,0 +1,216 @@
+Q1:import java.util.*;
+import java.lang.*;
+import java.io.*;
+import java.util.Scanner;
+class HelloWorld
+{
+	public static void main(String[] args)
+	{
+	Scanner num=new Scanner(System.in);
+	{
+		System.out.println("Enter number:");
+		double no=num.nextDouble();
+		if(no==0)
+		{
+			System.out.println("It is zero");
+		
+		}else if(no<0)
+		{
+	System.out.println("No is negative");
+	}else
+	{
+		System.out.println("Positive number");
+	}
+}
+}
+}
+
+Q2:ODD EVEN
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+import java.util.Scanner;
+class Oddeven
+{
+    public static void main(String[] args)
+    {
+        Scanner oe=new Scanner(System.in);
+        System.out.println("Enter number:");
+        double no1=oe.nextDouble();
+        if(no1%2==0)
+        {System.out.println("Even");}
+        else{System.out.println("Odd");}
+    }
+}
+
+Q3:VOWELS CONSONANTS
+import java.io.*;
+import java.lang.*;
+import java.util.*;
+import java.util.Scanner;
+class vowelcons{
+    public static void main(String[] args)
+    {
+        Scanner cr=new Scanner(System.in);
+        System.out.println("Enter character:");
+        char char1=cr.next();
+        if(char1=='a' || char1=='e' || char1=='i' || char1=='o' || char1=='u')
+        {System.out.println("Vowel");}
+        else{System.out.println("Consonant");
+    }
+}
+}
+
+Q4:ALPHABET- 
+import java.io.*;
+import java.lang.*;
+import java.util.*;
+class alphabets{
+    public static void main(String[] args)
+    {
+       char char1='w';
+        if((char1>64 && char1<91) || (char1>96 && char1<123)
+        {System.out.println("Alphabet");}
+        else{System.out.println("Not an Alphabet");
+    }
+}
+}
+
+Q5:Largest of 3 numbers-
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+import java.util.Scanner;
+class largestthree{
+	public static void main(String args[])
+	{
+	int i;
+	Scanner ln=new Scanner(System.in);
+	System.out.println("Enter no of elements:");
+	int arr=ln.nextInt();
+	int a[]=new int[arr];
+	System.out.println("Enter elements:");
+	for(i=0;i<arr;i++){//for reading array
+        a[i]=ln.nextInt();}
+        
+		if((a[0]>a[1]) && (a[0]>a[2]))
+		{System.out.println(a[0]+ "is largest");}
+		else if((a[1]>a[0]) && (a[1]>a[2]))
+		{System.out.println(a[1]+ "is largest");}
+		else{System.out.println(a[2]+ "is largest");}
+        
+	}}
+
+Largest of N numbers
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+import java.util.Scanner;
+class largestthree{
+	public static void main(String args[])
+	{
+	int i;
+	Scanner ln=new Scanner(System.in);
+	System.out.println("Enter no of elements:");
+	int arr=ln.nextInt();
+	int a[]=new int[arr];
+	System.out.println("Enter elements:");
+	for(i=0;i<arr;i++){//for reading array
+        a[i]=ln.nextInt();}
+        int max=a[0];
+        {
+        	for(int j=1;i<arr;i++)
+        	{
+        		if(a[0]<a[j])
+        		max=a[j];
+        	}
+        }
+	}}
+
+Q6:LEAP YEAR-
+import java.util.*;
+import java.lang.*;
+import java.util.Scanner;
+import java.io.*;
+class leapyear{
+	public static void main(String[] args)
+	{
+	Scanner ly=new Scanner(System.in);
+	System.out.println("Enter year:");
+	double year=ly.nextDouble();
+	if(((year%100!=0) && (year%4==0)) || (year%400==0))
+	{System.out.println("Leap year");}
+	else{System.out.println("Not a leap year");}
+}}
+
+Q7:	
+HELLO-
+import java.io.*;
+import java.util.*;
+import java.lang.*;
+import java.util.Scanner;
+class hellofive
+{
+	public static void main(String[] args)
+	{
+		for(int i=0;i<5;i++)
+		{System.out.println("Hello");}
+	}}
+
+Q8:SUM OF NATURAL NUMBERS-
+import java.io.*;
+import java.util.*;
+import java.lang.*;
+import java.util.Scanner;
+class sumofn
+{
+	public static void main(String[] args)
+	{
+		Scanner sn=new Scanner(System.in);
+		System.out.println("Enter number:");
+		int n=sn.nextInt();
+		int sum=(n*(n+1))/2;
+		System.out.println(+sum);
+	}}
+
+Q9:	
+SUM OF NATURAL NUMBERS USING FOR LOOP-
+import java.io.*;
+import java.util.*;
+import java.lang.*;
+import java.util.Scanner;
+class sumofn
+{
+	public static void main(String[] args)
+	{
+		int sum=0,i;
+		Scanner sn=new Scanner(System.in);
+		System.out.println("Enter number:");
+		int n=sn.nextInt();
+		for(i=1;i<=n;i++)
+		{sum+=i;}
+		System.out.println(+sum);
+	}}
+
+Q10:NO OF DIGITS-
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+import java.util.Scanner;
+class noofdigits
+{
+	public static void main(String[] args)
+	{
+		int count=0;
+		Scanner nd=new Scanner(System.in);
+		System.out.println("Enter number");
+		int n=nd.nextInt();
+		while(n!=0)
+		{
+			
+			n=n/10;
+			count++;
+		}
+		System.out.println(count);
+	}
+}
